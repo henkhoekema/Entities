@@ -330,24 +330,6 @@ Deze naam kun je rechtstreeks overnemen in scripts of automatiseringen.
 
 ---
 
-## Methode 3: Via een Dashboard
-
-Klik op een kaart waarin het apparaat wordt weergegeven.
-
-Kies:
-
-```text
-Meer informatie
-```
-
-of het tandwiel-icoon.
-
-Daar kun je vaak zien welke entity achter de kaart zit.
-
-Dit is handig wanneer je niet precies weet hoe een kaart is opgebouwd.
-
----
-
 # Entity-ID's vervangen in voorbeelden
 
 Stel dat een voorbeeld in deze repository het volgende bevat:
