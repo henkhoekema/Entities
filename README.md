@@ -292,7 +292,7 @@ binary_sensor.brievenbus
 person.jan
 ```
 
-De naam links is de entity-ID die gebruikt kan worden in YAML.
+Deze entiteiten kunnen gebruikt worden in de YAML.
 
 ### Extra voordeel
 
