@@ -3,9 +3,7 @@
 ## Waarom dit hoofdstuk belangrijk is
 
 De voorbeelden in deze repository zijn ontwikkeld en getest in mijn eigen Home Assistant-installatie. Daardoor bevatten ze entity-ID's die specifiek zijn voor mijn omgeving.
-
 Wanneer je een script, automatisering of blueprint uit deze repository overneemt, zul je vrijwel altijd een aantal entity-ID's moeten aanpassen voordat alles correct werkt.
-
 Veel problemen ontstaan niet doordat een script fout is, maar doordat Home Assistant een opgegeven entity simpelweg niet kan vinden.
 
 Een voorbeeld:
@@ -15,7 +13,6 @@ person.henk
 ```
 
 Bestaat deze entiteit niet in jouw installatie, dan zal de configuratie niet werken zoals bedoeld.
-
 Je zult deze entity moeten vervangen door de overeenkomstige entity uit jouw eigen Home Assistant-omgeving, bijvoorbeeld:
 
 ```yaml
@@ -35,7 +32,6 @@ Dit hoofdstuk legt uit wat entity-ID's zijn, hoe Home Assistant ze gebruikt en h
 # Wat is een entity?
 
 Home Assistant werkt vrijwel volledig met entiteiten (entities).
-
 Een entity vertegenwoordigt een apparaat, sensor, schakelaar, helper of andere informatiebron binnen Home Assistant.
 
 Voorbeelden zijn:
@@ -65,7 +61,6 @@ Bijvoorbeeld:
 | Pauzeknop | `input_boolean.bewaking_pauze` |
 
 Home Assistant gebruikt intern vrijwel altijd de entity-ID en niet de zichtbare naam.
-
 Je kunt de entity-ID vergelijken met het kenteken van een auto. Twee auto's kunnen hetzelfde model zijn, maar ieder kenteken is uniek. Zo werkt het ook met entiteiten binnen Home Assistant.
 
 ---
@@ -210,7 +205,6 @@ input_datetime.laatste_bezoek
 # Waarom zijn mijn entity-ID's anders?
 
 Iedere Home Assistant-installatie is uniek.
-
 Wanneer een apparaat wordt toegevoegd, maakt Home Assistant automatisch een entity-ID aan op basis van:
 
 - de apparaatnaam
@@ -316,7 +310,6 @@ Instellingen → Apparaten en diensten
 ```
 
 Open vervolgens het apparaat.
-
 Selecteer daarna een entiteit.
 
 Je ziet dan onder andere:
@@ -377,7 +370,6 @@ De werking van het script blijft hetzelfde. Alleen de verwijzing naar de juiste 
 # Let op bij notificaties
 
 Niet alleen entity-ID's verschillen per installatie.
-
 Ook notificatieservices hebben vaak andere namen.
 
 Voorbeeld uit mijn installatie:
@@ -548,19 +540,13 @@ Gebruik altijd de entity-ID.
 
 Voordat je een script, blueprint of automatisering uit deze repository gebruikt, controleer dan het volgende:
 
-✅ Bestaan alle genoemde entity-ID's?
-
-✅ Bestaan alle gebruikte helpers?
-
-✅ Bestaan alle notificatieservices?
-
-✅ Zijn alle sensoren aanwezig?
-
-✅ Zijn alle persoonsentiteiten aanwezig?
-
-✅ Zijn alle namen aangepast aan jouw situatie?
-
-✅ Geeft de YAML-controle geen fouten?
+- Bestaan alle genoemde entity-ID's?
+- Bestaan alle gebruikte helpers?
+- Bestaan alle notificatieservices?
+- Zijn alle sensoren aanwezig?
+- Zijn alle persoonsentiteiten aanwezig?
+- Zijn alle namen aangepast aan jouw situatie?
+- Geeft de YAML-controle geen fouten?
 
 Een paar minuten controleren voorkomt vaak uren zoeken naar problemen.
 
@@ -577,5 +563,4 @@ Ontwikkelaarstools → Statussen
 ```
 
 Controleer vóór gebruik van een script altijd of alle genoemde entities, notificatieservices en helpers daadwerkelijk bestaan in jouw installatie.
-
 Vrijwel alle problemen die ontstaan bij het overnemen van voorbeelden zijn terug te voeren op ontbrekende of verkeerd ingevulde entity-ID's. Controleer deze daarom altijd als eerste.
