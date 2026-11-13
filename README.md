@@ -559,7 +559,7 @@ Een entity-ID is de unieke naam waarmee Home Assistant een apparaat, sensor, hel
 De snelste manier om jouw entity-ID's te vinden is via:
 
 ```text
-Ontwikkelaarstools → Statussen
+Tools → Statussen
 ```
 
 Controleer vóór gebruik van een script altijd of alle genoemde entities, notificatieservices en helpers daadwerkelijk bestaan in jouw installatie.
